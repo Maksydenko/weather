@@ -31,10 +31,10 @@ const Document = () => (
       {/* System on the image */}
       <meta
         name="twitter:image"
-        content="https://github.com/Maksydenko/todo/blob/master/public/weather.png"
+        content="https://raw.githubusercontent.com/Maksydenko/weather/master/public/weather.png"
       />
-      <meta name="twitter:image:width" content="577" />
-      <meta name="twitter:image:height" content="577" />
+      {/* <meta name="twitter:image:width" content="577" /> */}
+      {/* <meta name="twitter:image:height" content="577" /> */}
       {/* Site localization */}
       <meta property="og:locale" content="en_US" />
       {/* Site localization, for the Ukrainian-language site uk_UA */}
@@ -48,11 +48,11 @@ const Document = () => (
       {/* Link to the image that will be published in the recording */}
       <meta
         property="og:image"
-        content="https://github.com/Maksydenko/todo/blob/master/public/weather.png"
+        content="https://raw.githubusercontent.com/Maksydenko/weather/master/public/weather.png"
       />
       <meta property="og:image:alt" content="Weather" />
-      <meta property="og:image:width" content="577" />
-      <meta property="og:image:height" content="577" />
+      {/* <meta property="og:image:width" content="577" /> */}
+      {/* <meta property="og:image:height" content="577" /> */}
       {/* Link to the current page */}
       <meta property="og:url" content="https://maksydenko.github.io/weather/" />
       {/* Name of the site */}
