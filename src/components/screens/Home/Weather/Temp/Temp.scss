@@ -1,0 +1,40 @@
+.temp {
+  // .temp__body
+
+  &__body {
+    > span {
+      display: block;
+    }
+  }
+
+  // .temp__feels-like
+
+  &__feels-like {
+    margin-bottom: rem(10);
+  }
+
+  // .temp__current
+
+  &__current {
+    font-size: rem(30);
+    margin-bottom: em(10, 30);
+  }
+
+  // .temp__min-max
+
+  &__min-max {
+    span:first-child {
+      padding-right: rem(5);
+      border-right: rem(1) solid $mainColor;
+    }
+
+    span:last-child {
+      padding-left: rem(5);
+      border-left: rem(1) solid $mainColor;
+    }
+  }
+
+  > span {
+    display: block;
+  }
+}

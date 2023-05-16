@@ -1,0 +1,98 @@
+@import "Temp/Temp.scss";
+@import "Icon/Icon.scss";
+@import "Details/Details.scss";
+@import "SunRiseSet/SunRiseSet.scss";
+@import "Wind/Wind.scss";
+
+.weather {
+  // .weather__container
+
+  &__container {
+  }
+
+  &__loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  // .weather__row
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(20);
+
+    @media (min-width: $mobile) {
+      text-align: center;
+    }
+
+    @media (max-width: $mobile) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(50);
+    }
+
+    // .weather__row_more
+
+    &_more {
+      @media (max-width: $mobile) {
+        align-items: start;
+      }
+    }
+
+    > * {
+      flex: 1 1 31.333%;
+    }
+  }
+
+  // .weather__location
+
+  &__location {
+    font-size: rem(40);
+
+    @media (max-width: $mobile) {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+
+  // .weather__temp
+
+  &__temp {
+    @media (min-width: $mobileSmall) {
+      text-align: center;
+    }
+  }
+
+  // .weather__icon
+
+  &__icon {
+    > div {
+      margin: 0 auto;
+    }
+  }
+
+  // .weather__details
+
+  &__details {
+    @media (min-width: $mobileSmall) {
+      text-align: center;
+    }
+  }
+
+  h1,
+  h2 {
+    font-weight: 600;
+  }
+
+  h2 {
+    margin-bottom: em(10, 18);
+    font-size: rem(18);
+  }
+}

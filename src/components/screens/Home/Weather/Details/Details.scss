@@ -1,0 +1,24 @@
+.details {
+  // .details__body
+
+  &__body {
+  }
+
+  // .details__title
+
+  &__title {
+  }
+
+  // .details__list
+
+  &__list {
+  }
+
+  // .details__item
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: rem(3);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.sun-rise-set {
+  &__body {
+    text-align: center;
+  }
+  // .sun-rise-set__box
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: rem(3);
+  }
+}

@@ -1,0 +1,30 @@
+.page-not-found {
+  // .page-not-found__container
+
+  &__container {
+    padding-top: rem(70);
+    padding-bottom: rem(70);
+    text-align: center;
+  }
+
+  // .page-not-found__title
+
+  &__title {
+    margin-bottom: em(20, 60);
+    font-size: rem(60);
+    font-weight: 600;
+  }
+
+  // .page-not-found__label
+
+  &__label {
+    margin-bottom: em(20, 30);
+    font-size: rem(30);
+  }
+
+  // .page-not-found__text
+
+  &__text {
+    font-size: rem(20);
+  }
+}
