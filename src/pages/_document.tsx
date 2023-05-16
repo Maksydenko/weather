@@ -53,8 +53,8 @@ const Document = () => (
       <meta property="og:url" content="https://maksydenko.github.io/weather/" />
       {/* Name of the site */}
       <meta property="og:site_name" content="Weather" />
-      <link rel="apple-touch-icon" href="/weather/favicon.ico" />
-      <link rel="icon" href="/weather/favicon.ico" />
+      <link rel="apple-touch-icon" href="/weather/favicon.png" />
+      <link rel="icon" href="/weather/favicon.png" />
       <title></title>
     </Head>
     <body>
