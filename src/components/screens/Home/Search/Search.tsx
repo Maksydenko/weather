@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 
 import { AppDispatch } from "@/provider/store";
 import { fetchWeather } from "@/provider/weather/weatherSlice";
-import SunDial from "../Weather/SunRiseSet/SunDial/SunDial";
 
 const Search: FC = () => {
   const [location, setLocation] = useState("");
