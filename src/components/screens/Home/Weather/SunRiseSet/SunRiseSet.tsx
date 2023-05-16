@@ -2,11 +2,11 @@ import { FC } from "react";
 
 import { IWeather } from "@/interfaces/weather.interface";
 
-interface ISunProps {
+interface ISunRiseSetProps {
   sysWeather: IWeather["sys"];
 }
 
-const SunRiseSet: FC<ISunProps> = ({ sysWeather }) => {
+const SunRiseSet: FC<ISunRiseSetProps> = ({ sysWeather }) => {
   // Get time
   interface IGetTime {
     (time: number): string;
