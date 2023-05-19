@@ -23,7 +23,7 @@ const SunRiseSet: FC<ISunRiseSetProps> = ({ sysWeather }) => {
   return (
     <div className="weather__sun-rise-set sun-rise-set">
       <div className="sun-rise-set__body">
-        <h2 className="sun-rise-set__title">Sunrise & sunset</h2>
+        <h2 className="sun-rise-set__title">Sunrise & Sunset</h2>
         <div className="sun-rise-set__box">
           <span>Sunrise: {`${sunrise}`}</span>
           <span>Sunset: {`${sunset}`}</span>
