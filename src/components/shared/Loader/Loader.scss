@@ -17,7 +17,7 @@
 }
 .smiley__eye1,
 .smiley__eye2 {
-  transform-origin: 64px 64px;
+  transform-origin: rem(64) rem(64);
 }
 .smiley__eye2 {
   animation-name: eye2;
@@ -41,34 +41,34 @@
 /* Animations */
 @keyframes eye1 {
   from {
-    transform: rotate(-260deg) translate(0, -56px);
+    transform: rotate(-260deg) translate(0, rem(-56));
   }
   50%,
   60% {
     animation-timing-function: cubic-bezier(0.17, 0, 0.58, 1);
-    transform: rotate(-40deg) translate(0, -56px) scale(1);
+    transform: rotate(-40deg) translate(0, rem(-56)) scale(1);
   }
   to {
-    transform: rotate(225deg) translate(0, -56px) scale(0.35);
+    transform: rotate(225deg) translate(0, rem(-56)) scale(0.35);
   }
 }
 @keyframes eye2 {
   from {
-    transform: rotate(-260deg) translate(0, -56px);
+    transform: rotate(-260deg) translate(0, rem(-56));
   }
   50% {
-    transform: rotate(40deg) translate(0, -56px) rotate(-40deg) scale(1);
+    transform: rotate(40deg) translate(0, rem(-56)) rotate(-40deg) scale(1);
   }
   52.5% {
-    transform: rotate(40deg) translate(0, -56px) rotate(-40deg) scale(1, 0);
+    transform: rotate(40deg) translate(0, rem(-56)) rotate(-40deg) scale(1, 0);
   }
   55%,
   70% {
     animation-timing-function: cubic-bezier(0, 0, 0.28, 1);
-    transform: rotate(40deg) translate(0, -56px) rotate(-40deg) scale(1);
+    transform: rotate(40deg) translate(0, rem(-56)) rotate(-40deg) scale(1);
   }
   to {
-    transform: rotate(150deg) translate(0, -56px) scale(0.4);
+    transform: rotate(150deg) translate(0, rem(-56)) scale(0.4);
   }
 }
 @keyframes eyeBlink {

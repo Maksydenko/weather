@@ -6,6 +6,7 @@ import {
   selectWeatherStatus,
 } from "@/provider/weather/weatherSlice";
 
+import Loader from "@/components/shared/Loader/Loader";
 import Temp from "./Temp/Temp";
 import Icon from "./Icon/Icon";
 import Details from "./Details/Details";
@@ -14,7 +15,6 @@ import SunRiseSet from "./SunRiseSet/SunRiseSet";
 
 import { IWeather } from "@/interfaces/weather.interface";
 import { StatusType } from "@/types/status.type";
-import Loader from "@/components/shared/Loader/Loader";
 
 const Weather: FC = () => {
   const weatherData: IWeather | null = useSelector(selectWeatherData);

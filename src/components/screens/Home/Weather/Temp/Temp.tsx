@@ -2,11 +2,11 @@ import { FC } from "react";
 
 import { IWeather } from "@/interfaces/weather.interface";
 
-interface ITempProps {
+interface TempProps {
   tempWeather: IWeather["main"];
 }
 
-const Temp: FC<ITempProps> = ({ tempWeather }) => {
+const Temp: FC<TempProps> = ({ tempWeather }) => {
   const feelsLike = Math.round(tempWeather.feels_like);
   const temp = Math.round(tempWeather.temp);
   const tempMax = Math.round(tempWeather.temp_max);

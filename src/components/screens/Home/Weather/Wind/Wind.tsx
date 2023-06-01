@@ -2,11 +2,11 @@ import { FC } from "react";
 
 import { IWeather } from "@/interfaces/weather.interface";
 
-interface IWindProps {
+interface WindProps {
   windWeather: IWeather["wind"];
 }
 
-const Wind: FC<IWindProps> = ({ windWeather }) => {
+const Wind: FC<WindProps> = ({ windWeather }) => {
   const speed = Math.round(windWeather.speed * 3.6);
   const deg = windWeather.deg;
 

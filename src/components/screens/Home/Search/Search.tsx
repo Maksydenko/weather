@@ -16,10 +16,10 @@ const Search: FC = () => {
     setLocation(value);
 
   // Handle submit
-  interface IHandleSubmit {
+  interface HandleSubmit {
     (e: FormEvent<HTMLFormElement>): void;
   }
-  const handleSubmit: IHandleSubmit = (e) => {
+  const handleSubmit: HandleSubmit = (e) => {
     if (location) {
       dispatch(fetchWeather(location));
       setLocation("");

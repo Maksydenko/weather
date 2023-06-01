@@ -2,11 +2,11 @@ import { FC } from "react";
 
 import { IWeather } from "@/interfaces/weather.interface";
 
-interface IDetailsProps {
+interface DetailsProps {
   dataWeather: IWeather;
 }
 
-const Details: FC<IDetailsProps> = ({ dataWeather }) => {
+const Details: FC<DetailsProps> = ({ dataWeather }) => {
   const humidity = dataWeather.main.humidity;
   const pressure = dataWeather.main.pressure;
   const visibility = dataWeather.visibility / 1000;

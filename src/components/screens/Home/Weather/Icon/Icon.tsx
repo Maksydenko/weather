@@ -2,11 +2,11 @@ import { FC } from "react";
 
 import { IWeather } from "@/interfaces/weather.interface";
 
-interface IIconProps {
+interface IconProps {
   iconsWeather: IWeather["weather"];
 }
 
-const Icon: FC<IIconProps> = ({ iconsWeather }) => {
+const Icon: FC<IconProps> = ({ iconsWeather }) => {
   const icon = iconsWeather[0];
   const description = icon.description;
 
