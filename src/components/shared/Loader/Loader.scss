@@ -5,6 +5,13 @@
   --trans-dur: 0.3s;
 }
 
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .smiley {
   width: 8em;
   height: 8em;

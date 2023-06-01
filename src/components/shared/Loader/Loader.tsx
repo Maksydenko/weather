@@ -1,11 +1,7 @@
 import { FC } from "react";
 
-interface LoaderProps {
-  className: string;
-}
-
-const Loader: FC<LoaderProps> = ({ className }) => (
-  <div className={`${className}__loader loader`}>
+const Loader: FC = () => (
+  <div className="loader">
     <svg
       role="img"
       aria-label="Mouth and eyes come from 9:00 and rotate clockwise into position, right eye blinks, then all parts rotate and merge into 3:00"
