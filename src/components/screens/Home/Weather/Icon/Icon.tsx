@@ -1,5 +1,11 @@
 import { FC } from "react";
 
+import Sunny from "./Items/Sunny";
+
+import Cloudy from "./Items/Cloudy";
+import Snowy from "./Items/Snowy";
+import Stormy from "./Items/Stormy";
+
 import { IWeather } from "@/interfaces/weather.interface";
 
 interface IconProps {
@@ -8,67 +14,29 @@ interface IconProps {
 
 const Icon: FC<IconProps> = ({ iconsWeather }) => {
   const icon = iconsWeather[0];
-  const description = icon.description;
+  const { main, description } = icon;
 
-  switch (icon.main) {
+  let IconItem = null;
+
+  switch (main) {
     case "Clear":
-      return (
-        <div className="weather__icon icon">
-          <div data-icon="sunny" data-label={description}>
-            <span className="sun"></span>
-          </div>
-        </div>
-      );
+      IconItem = <Sunny description={description} />;
+      break;
     case "Clouds":
-      return (
-        <div className="weather__icon icon">
-          <div data-icon="cloudy" data-label={description}>
-            <span className="cloud"></span>
-            <span className="cloud"></span>
-          </div>
-        </div>
-      );
+      IconItem = <Cloudy description={description} />;
+      break;
     case "Snow":
-      return (
-        <div className="weather__icon icon">
-          <div data-icon="snowy" data-label={description}>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      );
+      IconItem = <Snowy description={description} />;
+      break;
     case "Rain":
     case "Thunderstorm":
-      return (
-        <div className="weather__icon icon">
-          <div data-icon="stormy" data-label={description}>
-            <span className="cloud"></span>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      );
+      IconItem = <Stormy description={description} />;
+      break;
     default:
       return null;
   }
+
+  return IconItem ? <div className="weather__icon icon">{IconItem}</div> : null;
 };
 
 export default Icon;

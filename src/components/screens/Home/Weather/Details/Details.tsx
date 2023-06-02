@@ -6,10 +6,13 @@ interface DetailsProps {
   dataWeather: IWeather;
 }
 
-const Details: FC<DetailsProps> = ({ dataWeather }) => {
-  const humidity = dataWeather.main.humidity;
-  const pressure = dataWeather.main.pressure;
-  const visibility = dataWeather.visibility / 1000;
+const Details: FC<DetailsProps> = ({
+  dataWeather: {
+    main: { humidity, pressure },
+    visibility,
+  },
+}) => {
+  const formattedVisibility = visibility / 1000;
 
   return (
     <div className="weather__details details">
@@ -18,7 +21,9 @@ const Details: FC<DetailsProps> = ({ dataWeather }) => {
         <ul className="details__list">
           <li className="details__item">Humidity: {humidity}%</li>
           <li className="details__item">Pressure: {pressure} mBar</li>
-          <li className="details__item">Visibility: {visibility} km</li>
+          <li className="details__item">
+            Visibility: {formattedVisibility} km
+          </li>
         </ul>
       </div>
     </div>
