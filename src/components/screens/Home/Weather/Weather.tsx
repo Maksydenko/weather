@@ -23,7 +23,7 @@ const Weather: FC = () => {
   return (
     <section className="weather">
       <div className="weather__container">
-        {status === "loading" && <Loader className="weather" />}
+        {status === "loading" && <Loader />}
         {weatherData && (
           <>
             <div className="weather__row">
