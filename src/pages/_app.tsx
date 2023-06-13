@@ -1,11 +1,10 @@
 import type { AppProps } from "next/app";
-
+import Head from "next/head";
 import { Provider } from "react-redux";
 
 import { store } from "@/provider/store";
 
 import "@/assets/scss/globals.scss";
-import Head from "next/head";
 
 const App = ({ Component, pageProps }: AppProps) => (
   <Provider store={store}>
