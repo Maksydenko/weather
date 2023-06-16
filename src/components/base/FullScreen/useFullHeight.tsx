@@ -10,10 +10,10 @@ export const useFullHeight: IUseFullHeight = () => {
   const [height, setHeight] = useState("100vh");
 
   // Handle height update
-  interface IHandleResizeUpdate {
+  interface IHandleHeightUpdate {
     (): void;
   }
-  const handleHeightUpdate: IHandleResizeUpdate = () => {
+  const handleHeightUpdate: IHandleHeightUpdate = () => {
     const windowHeight = window.innerHeight;
     setHeight(`${windowHeight}px`);
   };
