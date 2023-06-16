@@ -1,10 +1,10 @@
 import { NextPage } from "next";
 import Layout from "@/components/layout/Layout";
-import PageNotFound from "@/components/screens/404/404";
+import NotFoundPage from "@/components/screens/404/404";
 
 const Page404: NextPage = () => (
   <Layout title="404" className="404">
-    <PageNotFound />
+    <NotFoundPage />
   </Layout>
 );
 
