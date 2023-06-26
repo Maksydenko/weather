@@ -6,7 +6,9 @@ Weather website
 
 📅 **Date:** May 2023
 
-🔗 **Webpage:** [link](https://maksydenko.github.io/weather/)
+🔗 **Webpage:** [link](https://weather-maksydenko.vercel.app/)
+
+🔗 **Mirror:** [link](https://maksydenko.github.io/weather/)
 
 ![HTML](https://skills.thijs.gg/icons?i=html)
 ![CSS](https://skills.thijs.gg/icons?i=css)
@@ -14,8 +16,8 @@ Weather website
 ![JavaScript](https://skills.thijs.gg/icons?i=javascript)
 ![TypeScript](https://skills.thijs.gg/icons?i=typescript)
 ![React](https://skills.thijs.gg/icons?i=react)
-![Redux](https://skills.thijs.gg/icons?i=redux)
 ![Next.js](https://skills.thijs.gg/icons?i=nextjs)
+![Redux](https://skills.thijs.gg/icons?i=redux)
 ![Webpack](https://skills.thijs.gg/icons?i=webpack)
 ![Git](https://skills.thijs.gg/icons?i=git)
 ![GitHub](https://skills.thijs.gg/icons?i=github)
