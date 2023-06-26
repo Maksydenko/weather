@@ -56,7 +56,10 @@ const App = ({ Component, pageProps }: AppProps) => (
       />
       <meta property="og:image:alt" content="Weather" />
       {/* Link to the current page */}
-      <meta property="og:url" content="https://maksydenko.github.io/weather/" />
+      <meta
+        property="og:url"
+        content="https://weather-maksydenko.vercel.app/"
+      />
       {/* Name of the site */}
       <meta property="og:site_name" content="Weather" />
     </Head>
