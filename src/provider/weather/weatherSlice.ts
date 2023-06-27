@@ -2,11 +2,11 @@ import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import { fetchWeatherData } from "./weatherApi";
 
 import { IWeather } from "@/interfaces/weather.interface";
-import { StatusType } from "@/types/status.type";
+import { TypeStatus } from "@/types/status.type";
 
 interface IInitialState {
   data: IWeather | null;
-  status: StatusType;
+  status: TypeStatus;
 }
 
 const initialState: IInitialState = {

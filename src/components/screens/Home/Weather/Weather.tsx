@@ -14,11 +14,11 @@ import Wind from "./Wind/Wind";
 import SunRiseSet from "./SunRiseSet/SunRiseSet";
 
 import { IWeather } from "@/interfaces/weather.interface";
-import { StatusType } from "@/types/status.type";
+import { TypeStatus } from "@/types/status.type";
 
 const Weather: FC = () => {
   const weatherData: IWeather | null = useSelector(selectWeatherData);
-  const status: StatusType = useSelector(selectWeatherStatus);
+  const status: TypeStatus = useSelector(selectWeatherStatus);
 
   const isLoading = status === "loading";
 
