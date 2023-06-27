@@ -28,8 +28,8 @@ const Loader: FC = () => (
           />
         </clipPath>
         <linearGradient id="smiley-grad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#000" />
-          <stop offset="100%" stop-color="#fff" />
+          <stop offset="0%" stop-color="#000000" />
+          <stop offset="100%" stop-color="#ffffff" />
         </linearGradient>
         <mask id="smiley-mask">
           <rect x="0" y="0" width="128" height="128" fill="url(#smiley-grad)" />
