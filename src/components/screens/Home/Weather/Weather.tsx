@@ -20,10 +20,12 @@ const Weather: FC = () => {
   const weatherData: IWeather | null = useSelector(selectWeatherData);
   const status: StatusType = useSelector(selectWeatherStatus);
 
+  const isLoading = status === "loading";
+
   return (
     <section className="weather">
       <div className="weather__container">
-        {status === "loading" && <Loader />}
+        {isLoading && <Loader />}
         {weatherData && (
           <>
             <div className="weather__row">
