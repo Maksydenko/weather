@@ -1,12 +1,18 @@
 .sun-rise-set {
+  // .sun-rise-set__body
+
   &__body {
     text-align: center;
   }
   // .sun-rise-set__box
 
   &__box {
-    display: flex;
-    flex-direction: column;
-    gap: rem(3);
+    > span {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: em(3, 14);
+      }
+    }
   }
 }

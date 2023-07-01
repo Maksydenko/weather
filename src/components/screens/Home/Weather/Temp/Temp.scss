@@ -23,18 +23,16 @@
   // .temp__min-max
 
   &__min-max {
-    span:first-child {
-      padding-right: rem(5);
-      border-right: rem(1) solid $mainColor;
-    }
+    > span {
+      &:first-child {
+        padding-right: rem(5);
+        border-right: rem(1) solid $mainColor;
+      }
 
-    span:last-child {
-      padding-left: rem(5);
-      border-left: rem(1) solid $mainColor;
+      &:last-child {
+        padding-left: rem(5);
+        border-left: rem(1) solid $mainColor;
+      }
     }
-  }
-
-  > span {
-    display: block;
   }
 }
