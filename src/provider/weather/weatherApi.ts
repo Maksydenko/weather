@@ -4,7 +4,7 @@ interface IFetchWeatherData {
   (location: string): Promise<IWeather>;
 }
 
-export const fetchWeatherData: IFetchWeatherData = async (location: string) => {
+export const fetchWeatherData: IFetchWeatherData = async (location) => {
   const API_KEY = "b325a710045095ee58c4b40ab240b272";
   const API_URL = "https://api.openweathermap.org/data/2.5/weather";
 
