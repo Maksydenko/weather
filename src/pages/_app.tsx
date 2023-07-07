@@ -7,7 +7,7 @@ import { store } from "@/provider/store";
 import "@/assets/scss/globals.scss";
 
 const App = ({ Component, pageProps }: AppProps) => (
-  <Provider store={store}>
+  <>
     <Head>
       {/* <meta charset="utf-8" /> */}
       <meta
@@ -63,8 +63,10 @@ const App = ({ Component, pageProps }: AppProps) => (
       {/* Name of the site */}
       <meta property="og:site_name" content="Weather" />
     </Head>
-    <Component {...pageProps} />
-  </Provider>
+    <Provider store={store}>
+      <Component {...pageProps} />
+    </Provider>
+  </>
 );
 
 export default App;
